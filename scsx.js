@@ -16,6 +16,7 @@
               success: function( device_data ) {
                   // Got the data - parse it and return the name
                   name = device_data['name'];
+                  console.log('Name:' + name );
                   return name;
               }
         });
