@@ -16,7 +16,7 @@
               success: function( device_data ) {
                   // Got the data - parse it and return the name
                   name = device_data['name'];
-                  callback(name);
+                  return name;
               }
         });
     };
@@ -29,7 +29,7 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['R', 'Get Name of the Device', 'get_name'],
+            ['R', 'Get Information Device %s', 'get_name',],
             ['r', '%n ^ %n', 'power', 2, 3]
         ]
     };
