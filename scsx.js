@@ -14,8 +14,10 @@
               url: 'http://api.smartcitizen.me/devices/'+deviceid,
               dataType: 'json',
               success: function( device_data ) {
+                  
                   // Got the data - parse it and return the name
                   name = device_data['name'];
+                  alert(name);
                   console.log('Name:' + name );
                   return name;
               }
