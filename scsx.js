@@ -17,9 +17,8 @@
                   
                   // Got the data - parse it and return the name
                   name = device_data['name'];
-                  alert(name);
                   console.log('Name:' + name );
-                  return name;
+                  callback(name);
               }
         });
     };
